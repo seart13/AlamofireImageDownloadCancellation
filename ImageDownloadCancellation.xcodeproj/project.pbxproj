@@ -12,9 +12,13 @@
 		9D88E93A1E2CC50A0002B3E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D88E9381E2CC50A0002B3E2 /* Main.storyboard */; };
 		9D88E93C1E2CC50A0002B3E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D88E93B1E2CC50A0002B3E2 /* Assets.xcassets */; };
 		9D88E93F1E2CC50A0002B3E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D88E93D1E2CC50A0002B3E2 /* LaunchScreen.storyboard */; };
+		9D88E9491E2CCD7A0002B3E2 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D88E9481E2CCD7A0002B3E2 /* ImageCell.swift */; };
+		9E1DDB0E8BE711D9A1EDE346 /* Pods_ImageDownloadCancellation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 300011BD12763BE10005B96F /* Pods_ImageDownloadCancellation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		035F923E92155507DED31ECE /* Pods-ImageDownloadCancellation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageDownloadCancellation.release.xcconfig"; path = "Pods/Target Support Files/Pods-ImageDownloadCancellation/Pods-ImageDownloadCancellation.release.xcconfig"; sourceTree = "<group>"; };
+		300011BD12763BE10005B96F /* Pods_ImageDownloadCancellation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageDownloadCancellation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D88E9311E2CC50A0002B3E2 /* ImageDownloadCancellation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageDownloadCancellation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D88E9341E2CC50A0002B3E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D88E9361E2CC50A0002B3E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		9D88E93B1E2CC50A0002B3E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D88E93E1E2CC50A0002B3E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D88E9401E2CC50A0002B3E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D88E9481E2CCD7A0002B3E2 /* ImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		A35675D8F2C835ABA5FB20EA /* Pods-ImageDownloadCancellation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageDownloadCancellation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ImageDownloadCancellation/Pods-ImageDownloadCancellation.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E1DDB0E8BE711D9A1EDE346 /* Pods_ImageDownloadCancellation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		311ACDAFE571F60BF67C6D01 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				300011BD12763BE10005B96F /* Pods_ImageDownloadCancellation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9D88E9281E2CC50A0002B3E2 = {
 			isa = PBXGroup;
 			children = (
 				9D88E9331E2CC50A0002B3E2 /* ImageDownloadCancellation */,
 				9D88E9321E2CC50A0002B3E2 /* Products */,
+				D5A21DD32EDE20706AB3FE5C /* Pods */,
+				311ACDAFE571F60BF67C6D01 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +77,18 @@
 				9D88E93B1E2CC50A0002B3E2 /* Assets.xcassets */,
 				9D88E93D1E2CC50A0002B3E2 /* LaunchScreen.storyboard */,
 				9D88E9401E2CC50A0002B3E2 /* Info.plist */,
+				9D88E9481E2CCD7A0002B3E2 /* ImageCell.swift */,
 			);
 			path = ImageDownloadCancellation;
+			sourceTree = "<group>";
+		};
+		D5A21DD32EDE20706AB3FE5C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A35675D8F2C835ABA5FB20EA /* Pods-ImageDownloadCancellation.debug.xcconfig */,
+				035F923E92155507DED31ECE /* Pods-ImageDownloadCancellation.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D88E9431E2CC50A0002B3E2 /* Build configuration list for PBXNativeTarget "ImageDownloadCancellation" */;
 			buildPhases = (
+				F7C1CAA277858BAF5A063DC3 /* [CP] Check Pods Manifest.lock */,
 				9D88E92D1E2CC50A0002B3E2 /* Sources */,
 				9D88E92E1E2CC50A0002B3E2 /* Frameworks */,
 				9D88E92F1E2CC50A0002B3E2 /* Resources */,
+				CF8AE6317904A51667C38EC0 /* [CP] Embed Pods Frameworks */,
+				7ADC653AE76AE6B66D614EA6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +126,7 @@
 				TargetAttributes = {
 					9D88E9301E2CC50A0002B3E2 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = BK8D6WZ5FL;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,12 +162,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7ADC653AE76AE6B66D614EA6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ImageDownloadCancellation/Pods-ImageDownloadCancellation-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF8AE6317904A51667C38EC0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ImageDownloadCancellation/Pods-ImageDownloadCancellation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7C1CAA277858BAF5A063DC3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9D88E92D1E2CC50A0002B3E2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9D88E9371E2CC50A0002B3E2 /* ViewController.swift in Sources */,
+				9D88E9491E2CCD7A0002B3E2 /* ImageCell.swift in Sources */,
 				9D88E9351E2CC50A0002B3E2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,8 +336,10 @@
 		};
 		9D88E9441E2CC50A0002B3E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A35675D8F2C835ABA5FB20EA /* Pods-ImageDownloadCancellation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BK8D6WZ5FL;
 				INFOPLIST_FILE = ImageDownloadCancellation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wat.com.ImageDownloadCancellation;
@@ -268,8 +350,10 @@
 		};
 		9D88E9451E2CC50A0002B3E2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 035F923E92155507DED31ECE /* Pods-ImageDownloadCancellation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BK8D6WZ5FL;
 				INFOPLIST_FILE = ImageDownloadCancellation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wat.com.ImageDownloadCancellation;
@@ -297,6 +381,7 @@
 				9D88E9451E2CC50A0002B3E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

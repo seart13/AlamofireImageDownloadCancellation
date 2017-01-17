@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  ImageDownloadCancellation
-//
-//  Created by Серебряков Артем on 16/01/2017.
-//  Copyright © 2017 seart13. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
